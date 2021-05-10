@@ -1,9 +1,56 @@
 # TrSeg: Transformer for Semantic Segmentation
 
-### Introduction
+## Introduction
 
 This repository is a PyTorch implementation of [TrSeg](https://hszhao.github.io/projects/psanet). This work is based on [semseg](https://github.com/hszhao/semseg/blob/1.0.0/README.md).
 
-<img src="./figure/TrSeg.png" width="900"/>
+<img src="./figure/TrSeg_Architecture.png" width="900"/>
 
-The code is easy to use for training and testing on various datasets. The codebase mainly uses ResNet50/101/152 as backbone and can be easily adapted to other basic classification structures. Implemented networks including [PSPNet](https://hszhao.github.io/projects/pspnet) and [PSANet](https://hszhao.github.io/projects/psanet), which ranked 1st places in [ImageNet Scene Parsing Challenge 2016 @ECCV16](http://image-net.org/challenges/LSVRC/2016/results), [LSUN Semantic Segmentation Challenge 2017 @CVPR17](https://blog.mapillary.com/product/2017/06/13/lsun-challenge.html) and [WAD Drivable Area Segmentation Challenge 2018 @CVPR18](https://bdd-data.berkeley.edu/wad-2018.html). Sample experimented datasets are [ADE20K](http://sceneparsing.csail.mit.edu), [PASCAL VOC 2012](http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=6) and [Cityscapes](https://www.cityscapes-dataset.com).
+The codebase mainly uses ResNet50/101/152 as backbone and can be easily adapted to other basic classification structures. Sample experimented dataset is [Cityscapes](https://www.cityscapes-dataset.com).
+
+## Requirement
+Hardware: >= 44G GPU memory
+
+Software: [PyTorch](https://pytorch.org/)>=1.0.0, python3
+
+## Usage
+For installation, follow installation steps below or recommend you to refer to the instructions described [here](https://github.com/hszhao/semseg/blob/1.0.0/README.md).
+
+If you use multiple GPUs for training, [Apex](https://github.com/NVIDIA/apex) is required for synchronized training (such as Sync-BN).
+
+For its pretrained model, you can download from [here].
+
+## Getting Started
+
+### Installation
+
+1. Clone this repository.
+```
+git clone https://github.com/youngsjjn/TrSeg.git
+```
+
+2. Install Python dependencies.
+```
+pip install -r requirements.txt
+```
+
+### Implementation
+1. Download datasets (i.e. [Cityscapes](https://www.cityscapes-dataset.com)) and change the root of data path in [config](./config/cityscapes/cityscapes_transform101.yaml).
+
+Download data list and pre-trained backbone models (ResNet50/101/152) [here](https://drive.google.com/open?id=15wx9vOM0euyizq-M1uINgN0_wjVRf9J3).
+
+2. Train (Evaluation is included at the end of the training)
+```
+sh tool/train.sh cityscapes transform101
+```
+
+3. Test (Pre_trained
+```
+sh tool/test.sh cityscapes transform101
+```
+
+   |  Network (ResNet-101)  |     mIoU     |
+   | :-------: | :----------: |
+   | PSPNet  |    0.786    |
+   | Deeplab-v3  |    0.793   |
+   | TrSeg  |    [0.799](https://drive.google.com/file/d/1fxPpA_mkk1Ijur8HTnrkQtchVbYhzLyI/view?usp=sharing)    |
