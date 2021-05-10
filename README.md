@@ -53,3 +53,23 @@ sh tool/test.sh cityscapes transform101
    | PSPNet  |    0.786    |
    | Deeplab-v3  |    0.793   |
    | TrSeg  |    [0.799](https://drive.google.com/file/d/1fxPpA_mkk1Ijur8HTnrkQtchVbYhzLyI/view?usp=sharing)    |
+   
+   
+### Citation
+
+You may want to cite:
+
+```
+@inproceedings{hou2020strip,
+  title={{Strip Pooling}: Rethinking Spatial Pooling for Scene Parsing},
+  author={Hou, Qibin and Zhang, Li and Cheng, Ming-Ming and Feng, Jiashi},
+  booktitle={CVPR},
+  year={2020}
+}
+@misc{semseg2019,
+  author={Zhao, Hengshuang},
+  title={semseg},
+  howpublished={\url{https://github.com/hszhao/semseg}},
+  year={2019}
+}
+```
