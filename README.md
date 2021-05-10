@@ -36,7 +36,6 @@ pip install -r requirements.txt
 
 ### Implementation
 1. Download datasets (i.e. [Cityscapes](https://www.cityscapes-dataset.com)) and change the root of data path in [config](./config/cityscapes/cityscapes_transform101.yaml).
-
 Download data list and pre-trained backbone models (ResNet50/101/152) [here](https://drive.google.com/open?id=15wx9vOM0euyizq-M1uINgN0_wjVRf9J3).
 
 2. Train (Evaluation is included at the end of the training)
