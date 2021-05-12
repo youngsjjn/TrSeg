@@ -60,16 +60,5 @@ sh tool/test.sh cityscapes transform101
 You may want to cite:
 
 ```
-@inproceedings{hou2020strip,
-  title={{Strip Pooling}: Rethinking Spatial Pooling for Scene Parsing},
-  author={Hou, Qibin and Zhang, Li and Cheng, Ming-Ming and Feng, Jiashi},
-  booktitle={CVPR},
-  year={2020}
-}
-@misc{semseg2019,
-  author={Zhao, Hengshuang},
-  title={semseg},
-  howpublished={\url{https://github.com/hszhao/semseg}},
-  year={2019}
-}
+
 ```
