@@ -18,7 +18,7 @@ For installation, follow installation steps below or recommend you to refer to t
 
 If you use multiple GPUs for training, [Apex](https://github.com/NVIDIA/apex) is required for synchronized training (such as Sync-BN).
 
-For its pretrained model, you can download from [here](https://drive.google.com/file/d/1fxPpA_mkk1Ijur8HTnrkQtchVbYhzLyI/view?usp=sharing).
+For its pretrained model, you can download from [my drive](https://drive.google.com/file/d/1fxPpA_mkk1Ijur8HTnrkQtchVbYhzLyI/view?usp=sharing).
 
 ## Getting Started
 
