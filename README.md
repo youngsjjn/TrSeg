@@ -43,7 +43,7 @@ Download data list and pre-trained backbone models (ResNet50/101/152) [here](htt
 sh tool/train.sh cityscapes transform101
 ```
 
-3. Test (Pre_trained
+3. Test
 ```
 sh tool/test.sh cityscapes transform101
 ```
