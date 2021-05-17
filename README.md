@@ -50,9 +50,9 @@ sh tool/test.sh cityscapes transform101
 
    |  Network (ResNet-101)  |     mIoU     |
    | :-------: | :----------: |
-   | PSPNet  |    0.786    |
-   | Deeplab-v3  |    0.793   |
-   | TrSeg  |    [0.799](https://drive.google.com/file/d/1fxPpA_mkk1Ijur8HTnrkQtchVbYhzLyI/view?usp=sharing)    |
+   | PSPNet  |    78.6    |
+   | Deeplab-v3  |    79.3   |
+   | TrSeg  |    [79.9](https://drive.google.com/file/d/1fxPpA_mkk1Ijur8HTnrkQtchVbYhzLyI/view?usp=sharing)    |
    
    
 ### Citation
