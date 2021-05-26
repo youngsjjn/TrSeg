@@ -60,5 +60,11 @@ sh tool/test.sh cityscapes transform101
 You may want to cite:
 
 ```
-
+@article{jin2021trseg,
+  title={TrSeg: transformer for semantic segmentation},
+  author={Jin, Youngsaeng and Han, David and Ko, Hanseok},
+  journal={Pattern Recognition Letters},
+  year={2021},
+  publisher={Elsevier}
+}
 ```
