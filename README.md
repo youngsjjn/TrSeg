@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is a PyTorch implementation of [TrSeg](https://hszhao.github.io/projects/psanet). This work is based on [semseg](https://github.com/hszhao/semseg/blob/1.0.0/README.md).
+This repository is a PyTorch implementation of [TrSeg](https://www.sciencedirect.com/science/article/pii/S016786552100163X). This work is based on [semseg](https://github.com/hszhao/semseg/blob/1.0.0/README.md).
 
 <img src="./figure/TrSeg_Architecture.png" width="900"/>
 
