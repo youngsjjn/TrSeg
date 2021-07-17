@@ -61,9 +61,11 @@ You may want to cite:
 
 ```
 @article{jin2021trseg,
-  title={TrSeg: transformer for semantic segmentation},
+  title={TrSeg: Transformer for semantic segmentation},
   author={Jin, Youngsaeng and Han, David and Ko, Hanseok},
   journal={Pattern Recognition Letters},
+  volume={148},
+  pages={29--35},
   year={2021},
   publisher={Elsevier}
 }
